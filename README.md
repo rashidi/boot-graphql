@@ -14,7 +14,7 @@ will explore how we can implement GraphQL server with Spring Boot.
 Full list of dependencies can be found in [pom.xml][3].
 
 ## Implementation
-Once all [dependencies have been added][4]. We will start by implementing schema for [Book][5].
+Once all dependencies have been added (see 973974c7). We will start by implementing schema for [Book][5].
 
 ### [Book.graphqls][6]
 
@@ -144,7 +144,6 @@ We have verified that there is a book with title If and Rudyard Kipling is its a
 [1]: https://graphql.org/
 [2]: https://spring.io/projects/spring-boot
 [3]: pom.xml#L23
-[4]: commit/973974c725db34f7271d738da3666b14eaf0c6e7
 [5]: src/main/java/scratches/boot/graphql/book/domain/Book.java
 [6]: src/main/resources/Book.graphqls
 [7]: src/main/java/scratches/boot/graphql/book/web/BookGraphQLQueryResolver.java
