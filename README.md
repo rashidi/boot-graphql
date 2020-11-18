@@ -150,5 +150,5 @@ We have verified that there is a book with title If and Rudyard Kipling is its a
 [7]: src/main/java/scratches/boot/graphql/book/web/BookGraphQLQueryResolver.java
 [8]: src/main/java/scratches/boot/graphql/book/domain/BookRepository.java
 [9]: src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java
-[10]: blob/7785ad5772d720ef5e0af85e9c4d2c4cb369c788/src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java#L36
-[11]: blob/7785ad5772d720ef5e0af85e9c4d2c4cb369c788/src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java#L61
+[10]: src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java#L36
+[11]: src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java#L61
