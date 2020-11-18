@@ -141,6 +141,57 @@ class BookRestClientTests {
 
 We have verified that there is a book with title If and Rudyard Kipling is its author.
 
+### Manual verification
+To perform manual verification we will have to deploy the application and use [GraphiQL][12] to perform our queries.
+
+#### Deploy the application
+```shell script
+mvnw spring-boot:start
+```
+
+Once the application is ready, GraphQL is accessible at [http://localhost:9000/graphql][13] and GraphiQL is available
+at [http://localhost:9000/graphiql][13].
+
+#### Find all Books
+Provide the following content in the query panel:
+
+```graphql
+{
+  findAll {
+    id
+    author {
+      name
+    }
+    title                    
+  }
+}
+```
+
+The response will be as follows:
+
+```json
+{
+  "data": {
+    "findAll": [
+      {
+        "id": "1",
+        "author": {
+          "name": "Rudyard Kipling"
+        },
+        "title": "If"
+      },
+      {
+        "id": "2",
+        "author": {
+          "name": "Rudyard Kipling"
+        },
+        "title": "The Jungle Book"
+      }
+    ]
+  }
+}
+```
+
 [1]: https://graphql.org/
 [2]: https://spring.io/projects/spring-boot
 [3]: pom.xml#L23
@@ -151,3 +202,6 @@ We have verified that there is a book with title If and Rudyard Kipling is its a
 [9]: src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java
 [10]: src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java#L36
 [11]: src/test/java/scratches/boot/graphql/book/web/BookRestClientTests.java#L61
+[12]: https://github.com/graphql/graphiql
+[13]: http://localhost:9000/graphiql
+[14]: http://localhost:9000/graphql
