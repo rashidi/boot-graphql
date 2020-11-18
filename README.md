@@ -149,7 +149,7 @@ To perform manual verification we will have to deploy the application and use [G
 mvnw spring-boot:start
 ```
 
-Once the application is ready, GraphQL is accessible at [http://localhost:9000/graphql][13] and GraphiQL is available
+Once the application is ready, GraphQL is accessible at [http://localhost:9000/graphql][14] and GraphiQL is available
 at [http://localhost:9000/graphiql][13].
 
 #### Find all Books
