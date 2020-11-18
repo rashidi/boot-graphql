@@ -1,0 +1,14 @@
+type Query {
+    findAll: [Book]
+    findByTitle(title: String): Book
+}
+
+type Author {
+    name: String!
+}
+
+type Book {
+    id: ID
+    author: Author!
+    title: String!
+}

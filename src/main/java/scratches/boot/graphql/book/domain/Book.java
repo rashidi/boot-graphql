@@ -1,9 +1,6 @@
 package scratches.boot.graphql.book.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.relational.core.mapping.Embedded;
@@ -16,6 +13,7 @@ import static org.springframework.data.relational.core.mapping.Embedded.OnEmpty.
  */
 @Data
 @RequiredArgsConstructor
+@NoArgsConstructor(access = PRIVATE)
 @AllArgsConstructor(access = PRIVATE, onConstructor = @__(@PersistenceConstructor))
 public class Book {
 
