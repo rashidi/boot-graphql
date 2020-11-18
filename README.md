@@ -14,7 +14,7 @@ will explore how we can implement GraphQL server with Spring Boot.
 Full list of dependencies can be found in [pom.xml][3].
 
 ## Implementation
-Once all dependencies have been added (see 973974c7). We will start by implementing schema for [Book][5].
+We will start by implementing schema for [Book][5].
 
 ### [Book.graphqls][6]
 
