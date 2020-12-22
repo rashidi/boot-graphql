@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>15</java.version>
-        <graphql-kickstart-spring-boot.version>8.1.0</graphql-kickstart-spring-boot.version>
+        <graphql-kickstart-spring-boot.version>8.1.1</graphql-kickstart-spring-boot.version>
         <graphql-kickstart-tools.version>6.3.0</graphql-kickstart-tools.version>
     </properties>
 
